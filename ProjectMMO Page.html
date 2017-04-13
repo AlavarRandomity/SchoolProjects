@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <head>
+      <title>SynTum | Home</title>
+
+      <!-- JQuery scrip(s) -->
+      <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+      <!-- CSS stuff -->
+      <link type="text/css" rel="stylesheet" href="MMO1.css">
+
+      <!-- Javascript scrip(s) -->
+      <script type="text/javascript">
+$(function() {
+	$("#tfq2b").click(function() {
+		if ($("#tfq2b").val() == "Search our website"){
+			$("#tfq2b").val("");
+		}
+	});
+});
+</script>
+  </head>
+
+<!-- Start Body Code -->
+
+  <body>
+      <section id="datbody">
+        <div id="TPN">
+            <span id="leftstuff">
+              <a href="#">&nbsp;&nbsp;&nbsp;SynTum&nbsp;&nbsp;&nbsp;</a>  | |
+              <a href="#">&nbsp;&nbsp;&nbsp;H.A.L.O.S.&nbsp;&nbsp;&nbsp;</a> | |
+              <a href="#">&nbsp;&nbsp;&nbsp;Ergo Manifest&nbsp;&nbsp;&nbsp;</a>
+             </span>
+             <span id="rightstuff">
+                 <form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq2b" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value=">" class="tfbutton2">
+		            </form>
+		        <div class="tfclear"></div>
+             </span>
+        </div>
+          <!-- I despise this piece of code with a burning passion cause it LAYERS UNDER THE HEADER -->
+          <!-- Not that I'm complaining. It actually looks pretty cool, in it's own little way -->
+            <section id="actual_banner">
+                <img src="SynTumLogo.png">
+            </section>
+        <div class="filler"></div>
+        <section id="content_nav">
+            <span class="CONTENTBUTTONS">
+                <li class="actualnavigation">
+                    <a href="#" title="lol I'm a dummy link! :D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="Me too.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game Info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="Sorry, we have failed you for being dummy links.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game Guide&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="I've always wondered how long these title things can be.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Media&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="CAN WE TRY THIS? I BET WE CAN BREAK IT OR SOMETHING.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-- okay, maybe not.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+            </ul>
+            </span>
+        </section>
+      <div class="filler"></div>
+        <section id="realcontent">
+            <!-- <div id="left_column">
+                <br />
+                This is a left column.
+                <p>
+                <span id="sidebar">
+                    I'm a nagivation example.
+                    <p>
+                        <ul class="examplenav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Game Info</a></li>
+                            <li><a href="#">Game Guide</a></li>
+                            <li><a href="#">Media</a></li>
+                            <li><a href="#">Community</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                </span>
+            </div> -->
+            <div id="right_column">
+                <br/ >
+                This is a right column.
+            </div>
+            <!-- Legitimate Content where everyone needs to read -->
+            <div id="content_wrapper">
+                <div class="GameNews">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer tempus, leo et suscipit tincidunt, lorem quam posuere ligula, sit amet vulputate augue nulla vel velit. Praesent vel sem nulla. Duis vehicula metus vel laoreet consequat. Cras ultrices semper enim a gravida. Sed et dui purus. Aliquam erat volutpat. Nunc finibus ligula eu odio semper lacinia.
+<p>
+Cras tempor lectus purus, eu rhoncus sem tincidunt id. Aenean id lectus at nulla scelerisque mattis. Proin ullamcorper metus quis condimentum ullamcorper. Curabitur vel velit suscipit, facilisis mi ac, accumsan orci. Suspendisse laoreet mollis lobortis. Cras interdum diam venenatis, eleifend felis sed, volutpat dolor. Duis maximus mattis commodo.
+<p>
+Integer eget ipsum sed erat mollis pellentesque pulvinar a nisl. Pellentesque auctor elit sed neque fermentum, sed lacinia leo tristique. Nullam eget fermentum quam. Praesent finibus arcu mi, a vulputate libero vestibulum a. Praesent elit velit, molestie sit amet bibendum ac, vehicula vel turpis. Fusce congue auctor hendrerit. Curabitur convallis venenatis metus, finibus porta massa hendrerit nec. Pellentesque eleifend auctor elementum.
+<p>
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque non mauris sit amet tellus molestie ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In sit amet molestie lectus. Nam augue purus, fermentum ac lobortis vitae, scelerisque condimentum arcu. Nulla eleifend dictum lacinia. Integer dapibus tincidunt arcu ac efficitur. Integer efficitur in velit in tincidunt. Nunc id luctus turpis. Maecenas elementum urna ut sem lacinia aliquet. Suspendisse hendrerit diam ut lorem gravida scelerisque.
+<p>
+Donec id sem iaculis, gravida dui et, consectetur felis. Integer risus lectus, pulvinar vitae diam in, posuere finibus sem. In aliquet interdum commodo. Nullam id lectus tincidunt, pellentesque nunc quis, ultrices velit. Sed pellentesque lobortis dolor, non facilisis diam pretium nec. Phasellus efficitur consequat fringilla. In in felis non odio dapibus mollis nec non ipsum. Etiam ac enim ac lorem finibus tempus id vitae eros. Aliquam faucibus pellentesque tortor quis bibendum. Etiam ut tempus nisl.
+                </div>
+            </div>
+        </section>
+    </div>
+
+<!-- Footers because -->
+
+    <section id = "footer">
+        <div id = "BPN">
+            <li class="footerNavigation">
+                    <a href="#" title="lol I'm a dummy link! :D">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="SNRK me too.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game Info&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="Sorry, we have failed you for being dummy links.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Game Guide&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="I've always wondered how long these title things can be.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Media&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="CAN WE TRY THIS? I BET WE CAN BREAK IT OR SOMETHING.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Community&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a> |
+                    <a href="#" title="HHHHHHHHHHHHHHHHHHHHHHHHHHHHHH-- okay, maybe not.">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Support&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                </li>
+            <div class="copywrite">
+            <p>This website is created by Brenna Picar. Please do not replicate website or its contents.</p>
+        </div>
+        </div>
+    </section>
+  </body>
+</html>

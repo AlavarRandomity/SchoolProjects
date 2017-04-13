@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Mouse Over and Mouse Out Event1</title>
+
+        <script>
+            function secondImg(x)
+            {
+                x.src="AlfendiMinds.png";
+            }
+            function firstImg(x)
+            {
+                x.src="Alfendiingredient.png";
+            }
+        </script>
+    </head>
+    <body>
+        <img onmouseover="firstImg(this)"
+             onmouseout="secondImg(this)"
+             border="0"
+             src="AlfendiMinds.png" />
+        <img onmouseover ="secondImg(this)"
+             onmouseout="firstImg(this)"
+             border="0"
+             src="Alfendiingredient.png" />
+
+        <p>//giggles/ ovo</p>
+    </body>
+</html>

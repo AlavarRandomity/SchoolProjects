@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+    <head>
+    </head>
+    <body>
+        <canvas width="705"
+                height="250"
+                id="canvas2"
+                style="border: 1px solid #000;">
+        </canvas>
+
+        <script>
+            c=document.getElementById("canvas2");
+            ctx=c.getContext("2d");
+
+
+            var p1 = {x:250, y:0};
+            var p2 = {x:250, y:250};
+
+            var flipflop = 1;
+
+
+            function myTimer() {
+            // invalidate canvas2
+                c.width = c.width;
+
+            // -- circle -------------------
+                var start = (Math.PI/180)*0;
+                var end = (Math.PI/180)*360;
+                ctx.fillStyle = "#c3c300";
+                ctx.arc(125, 125, 100, start, end);
+                ctx.fill();
+
+
+            // -- erase mouth ---------------
+                if (flipflop) {
+                   p1.y = p1.y + 1;
+                   p2.y = p2.y - 1;
+                     if (p1.y >= 125)
+                         flipflop = !flipflop;
+                } else {
+                   p1.y = p1.y - 1;
+                   p2.y = p2.y + 1;
+                     if (p1.y == 0)
+                         flipflop = !flipflop;
+                }
+                ctx.fillStyle = "rgba(255, 255, 255, 1.0)";
+                ctx.strokeStyle = "white";
+                ctx.lineWidth = 1;
+                ctx.beginPath();
+                ctx.moveTo(125, 125);
+                ctx.lineTo(p1.x, p1.y);
+                ctx.lineTo(p2.x, p2.y);
+                ctx.lineTo(125, 125);
+                ctx.closePath();
+                ctx.fill();
+                ctx.stroke();
+            }
+            var myVar=setInterval(function(){myTimer()},1);
+
+        </script>
+    </body>
+</html>
